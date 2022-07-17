@@ -1,0 +1,96 @@
+*{
+    padding:0;
+    margin:0;  
+}
+
+.hide{
+    display:none;
+
+}
+
+.carGame{
+    width: 100%;
+    height: 100vh;
+    background-image:url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.car ,.enemy{
+    width: 50px;
+    height: 100px;
+    /* background: red; */
+    /* background-color: white; */
+    color:red;
+    position: absolute;
+    left: 0px;
+    bottom : 10px;
+    background-image: url('car1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.lines{
+    width: 10px;
+    height: 100px;
+    background:white;
+    position:absolute;
+    margin-left:195px;
+
+}
+
+.gameArea{
+    width: 400px;
+    height: 100vh;
+    background: #2d3436;
+    margin: auto;
+    /* for positioning the car to be within the road in the start */
+    position: relative;
+    overflow:hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+
+.score{
+    position: absolute;
+    top:15px;
+    left:40px;
+    background: green;
+    width: 300px;
+    /* height: 70px; */
+    line-height: 70px;
+    text-align:center;
+    color:white;
+    font-size: 1.5em;
+    font-family: fantasy;
+    box-shadow: 0 5px 5px #777;
+}
+
+.startScreen{
+    position:absolute;
+    background-color:#ee5253;
+
+    /* Getting one div inside another */
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+    color: white;
+
+    /* z-indez given so that this remains always on the top and not hidden/bottom */
+    z-index: 1;
+    text-align:center;
+    border: 1px solid #ff6b6b;
+    padding: 15px;
+    
+    margin:auto;/* for getting the div to the center*/
+    width: 50%;
+    cursor: pointer;
+    font-family: carfront;
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+
+}
